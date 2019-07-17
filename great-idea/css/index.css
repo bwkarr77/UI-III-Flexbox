@@ -64,3 +64,389 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*------Header/Navigation Bar------*/
+.container-header{
+	width: 880px;
+	justify-content: center;
+	
+	/*
+	----No 'Fixed' Nav Bar------
+	display:flex;
+	margin-top:26px; 
+	*/
+
+	/*-----With 'Fixed Nav' Bar-----*/
+	position:fixed;
+	z-index:2;
+	background-image:linear-gradient(45deg, navy, teal);
+	margin-top:-44px;
+}
+.container header nav a{
+	text-decoration-line: none;
+	font-size: 14px;
+	color:white;
+}
+.container-nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	width:100%;
+
+}
+
+/*--------Inserts an image as a background image------
+body{
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	}
+*/
+
+.container{
+	top:100;
+	max-width:880px;
+	height:auto;
+	text-align:center;
+	margin:auto;
+}
+
+
+/*-------Innovation on Demand Section------*/
+.container .main{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin-top: 69px;
+
+	/*---Include below IFF Nav Bar is 'Fixed----*/
+	padding-top: 63px;
+	}
+.main div{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	flex-basis: 50%;
+}
+h1{
+	font-size:76px;
+	transform: scale(1.1,1);
+	margin: 10px 0px 0px 46px;
+	}
+
+		/*---Code for "Get Started" Button----*/
+.main div a{
+	padding: 7px 41px;
+	border:1px solid black;
+	font-size: 19px;
+	text-decoration-line:none;
+	color:black;
+	margin:18px 0px 0px 42px;
+
+	/*---Animation code----*/
+	transition: transform 3s, font-weight 3s;
+}
+.main div a:hover{
+	transform: scale(1.3);
+	font-weight: bold;
+}
+
+		/*---Image code and animation*/
+.code-image{
+	display:flex;
+	justify-content:flex-end;
+	flex-basis: 50%;
+
+	/*animation-stretch*/
+	transition: transform 10s;
+}
+.code-image:hover{
+	transform: rotate(900deg);
+	/*animation: rotation 2s infinite linear;*/
+}
+
+
+
+
+/*-----Content Sections-----*/
+article{
+	margin-top:77px;
+}
+article p{
+	line-height:18px;
+}
+
+article .top-section{
+	display:flex;
+	justify-content:flex-start;
+	margin-top:40px;
+}
+article .top_text{
+	text-align: left;
+	flex-basis:50%;
+	margin-left:2px;
+}
+
+
+article img{
+	margin-top: 38px;
+}
+
+.bottom-section{
+	display:flex;
+	margin:37px 0px 49px 0px;
+	justify-content:space-between;
+}
+article .bottom-text{
+	text-align: left;
+	margin-left:2px;
+}
+
+/*-----Footer-----*/
+footer{
+	display:flex;
+	margin:37px 0 0 3px;
+	justify-content: flex-start;
+	text-align:left;
+	color: black;
+	line-height: 18px;
+}
+
+
+.copyright{
+	margin:54px 0px 115px 0px;
+	font-size:14;
+}
+
+
+
+/*----Code for Services Page-----*/
+.services-header-img{
+	width:100%;
+	height: auto;
+}
+.services-main{
+	margin-top:68px;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	padding: 14px 0 31px 0;
+}
+section .services-about{
+	text-align: left;
+	flex-basis:auto;
+	padding: 34px 0 1px 0;
+}
+.services-about h3{
+	font-size: 25px;
+}
+.services-about p{
+	line-height: 20px;
+}
+
+
+/*article*/
+.article-services{
+	margin-top: 27px;
+}
+.service-boxes{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+.service-box{
+	width: 420px;
+	font-size:13px;
+	border:1px black solid;
+	margin: 12px 0 27px 0;
+	padding:20px 20px 30px 20px;
+	text-align:left;
+	line-height:15px;
+	background-color:#f4f3f4;
+}
+.service-boxes h3{
+	font-weight:bold;
+	font-size: 16px;
+}
+.service-boxes p{
+	font-size: 17px;
+	padding: 5px 0 30px 0;
+	line-height: 20px;
+}
+
+.service-box a{
+	border:1px black solid;
+	border-radius:2px;
+	padding: 8px 43px;
+	font-size: 11px;
+	text-decoration-line:none;
+	border-radius:6px;
+}
+
+
+.service-bottom{
+	font-size:15px;
+	text-align:left;
+	display:flex;
+	padding: 36px 0 35px 0;
+	font-size: 16px;
+	justify-content: space-between;
+}
+.service-bottom p{
+	line-height: 20px;
+	width: 416px;
+	padding: 0 0 22px 0;
+}
+.service-bottom ul{
+	font-size: 16px;
+	list-style-type: square;
+	list-style-position: inside;
+	line-height:30px;
+}
+.services-info-img{
+	align-self: flex-start;
+	margin: 0px;
+}
+
+.vision-intro{
+	display:flex;
+	justify-content:center;
+	margin-top: 69px;
+	padding: 60px 0 40px 0;
+}
+.vision-main {
+	display: flex;
+	justify-content: space-around;
+	width:30%
+}
+.vision-main h1{
+	font-size:120px;
+}
+.vision-hero{
+	width: 50%;
+	border-radius: 47%;
+}
+
+.vision-article{
+	margin: 40px 0 0 0;
+}
+.vision-section{
+	display: flex;
+	flex-wrap: wrap;
+}
+.vision-article .vision-section div{
+	text-align:left;
+	padding: 10px 0 20px 0px;
+}
+.vision-text{
+	width:80%;
+	margin: 0px;
+}
+.mission-text{
+	width: 70%;
+	margin:0 0 0 20%;
+}
+.sight-with-image{
+	display: flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.sight-text{
+	width: 45%;
+}
+.glasses{
+	width:45%;
+	height:auto;
+	margin:0;
+	opacity: 0.8;
+	border-radius: 20%;
+}
+
+
+
+/*-----Cell Phone Viewing-----*/
+/*---Cell Phone Width = 480px ------*/
+@media only screen and (max-width: 480px) {
+	.container-header {
+		width:100%;
+		display: flex;
+		justify-content: center;
+		flex-direction:column;
+		position: fixed;
+		z-index: 2;
+		background-image: linear-gradient(45deg, navy, teal);
+		margin-top: -44px;
+	}
+	.container{
+		width:100%;
+	}
+    .container .main{
+		flex-wrap: wrap;
+		padding-top: 90px;
+	}
+	.code-image{
+		padding-top: 25px;
+	}
+	.container-nav{
+		flex-direction: column;
+	}
+
+	.index-page article section{
+		flex-wrap:wrap;	
+		justify-content:center;	
+margin:0;
+	}
+	.index-page article section div{
+		width:80%;
+		padding: 10px 0 10px 0;
+
+	}
+
+
+
+
+	.service-bottom{
+		flex-wrap: wrap;
+	}
+	.services-info-img{
+		margin: 20px 0 0 0;
+	}
+	.services-main{
+		padding: 100px 0 31px 0;
+	}
+
+	.vision-intro{
+		flex-direction:column;
+		padding: 92px 0 40px 0;
+		align-items:center;
+	}
+	.vision-intro h1{
+		margin: 0;
+	}
+	/* .vision-main{
+		margin: 0 0 0 0; */
+	/*	height: auto;
+	}
+	.vision-hero{
+		min-width: 300px;
+		height:auto;
+	} */
+
+
+	.vision-section{
+		justify-content:center;
+	}
+	.vision-section div{
+		margin:0;
+		width: 300px;
+	}
+	.sight-with-image{
+		flex-wrap: wrap;
+	}
+	.sight-text{
+		min-width:200px;
+	}
+	.glasses{
+		min-width:200px;
+		height:auto;
+	}
+}
